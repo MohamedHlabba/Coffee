@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/caroussel.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
 
     <title>Hello, world!</title>
   </head>
@@ -54,7 +55,8 @@
         <div class="card shadow border-0">
         <img class="card-img-top"  src="https://via.placeholder.com/600" alt="Card image cap">
         <div class="card-body">
-            <a  data-toggle="modal" data-target="#exampleModal"><h5 class="card-title">More details</h5></a>
+            <a  data-toggle="modal" data-target="#exampleModal">
+              <h5 class="card-title">More details</h5></a>
            
         </div>
           
@@ -225,7 +227,7 @@
     <div class="card shadow border-0">
         <img class="card-img-top"  src="https://via.placeholder.com/600" alt="Card image cap">
         <div class="card-body">
-            <a  data-toggle="modal" data-target="#exampleModal"><h5 class="card-title">More details</h5></a>
+          <a  data-toggle="modal" data-target="#exampleModal"><h5 class="card-title">More details</h5></a>
            
         </div>
           
@@ -240,8 +242,8 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="card-title">Coffee machine 1</h5>
-                    <p class="card-text">Price : 555    </p>
+                    <h5 class="card-title">Coffee machine 3</h5>
+                    <p class="card-text">Price :$    </p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -256,42 +258,96 @@
           
 </div>
 <br/><br/><br/>
-<div class="row">
-    <div class="col-md-6">
-           <!-- Product -->
-           <h1 class="text-center text-secondary">Private</h1>
-
-    <div class="card shadow border-0">
-        <img class="card-img-top"  src="https://via.placeholder.com/600" alt="Card image cap">
+ <!-- Kaffeparty -->
+  <div class="container">
+    <div class="card-deck mb-3 text-center">
+      
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Private</h4>
+        </div>
         <div class="card-body">
-            <h5 class="card-title">Private Coffee machine 1</h5>
-            <p class="card-text">Price : 555    </p>
+          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Coffee </li>
+            <li>Information </li>
+            <li>Details</li>
+            <li>More details about the product</li>
+          </ul>
+          <button type="button"  data-toggle="modal" data-target="#contact" class="btn btn-lg btn-block btn-primary">Contact us</button>
         </div>
-          
- 
-        
-        
+      </div>
+      
+        <!--Contact Modal-->
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">We would love to hear from you!!</h5> <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form my-3 mr-2 ml-2">
+                            <div class="form-row">
+                                <div class="form-group col-sm"> <label for="exampleInputEmail1" style="color: #fff;">Enter Name</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First"> </div>
+                                <div class="form-group col-sm"> <label class="sm-lbl" for="exampleInputEmail1" style="color:rgba(0, 0, 0, 0); visibility: hidden;">Enter Name</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last"> </div>
+                            </div>
+                            <div class="form-group"> <label for="exampleInputEmail1" style="color: #fff;">Enter Email</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""> </div>
+                            <div class="form-group"> <label for="exampleFormControlTextarea1" style="color: #fff;">Your Query or Question</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea> </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-outline-light ml-sm-2" style="border-radius: 50px; width:100%;" data-dismiss="modal" aria-label="Close">Submit</button> </div>
+                </div>
+            </div>
         </div>
-            <!-- Product -->
-    </div>
-    <div class="col-md-6">
-        <!-- Product -->
-        <h1 class="text-center text-secondary">Entreprise</h1>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Entreprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Coffee </li>
+              <li>Information </li>
+              <li>Details</li>
+              <li>More details about the product</li>
+            </ul>
+            <button type="button"  data-toggle="modal" data-target="#contact" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          </div>
+        </div>
+        
+          <!--Contact us Modal-->
+          <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark">
+                      <div class="modal-header">
+                          <h5 class="modal-title text-light" id="exampleModalLabel">We would love to hear from you!!</h5> <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="form my-3 mr-2 ml-2">
+                              <div class="form-row">
+                                  <div class="form-group col-sm"> <label for="exampleInputEmail1" style="color: #fff;">Enter Name</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First"> </div>
+                                  <div class="form-group col-sm"> <label class="sm-lbl" for="exampleInputEmail1" style="color:rgba(0, 0, 0, 0); visibility: hidden;">Enter Name</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last"> </div>
+                              </div>
+                              <div class="form-group"> <label for="exampleInputEmail1" style="color: #fff;">Enter Email</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""> </div>
+                              <div class="form-group"> <label for="exampleFormControlTextarea1" style="color: #fff;">Your Query or Question</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea> </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer"> <button type="button" class="btn btn-outline-light ml-sm-2" style="border-radius: 50px; width:100%;" data-dismiss="modal" aria-label="Close">Submit</button> </div>
+                  </div>
+              </div>
+          </div>
+    
+    
 
- <div class="card shadow border-0">
-     <img class="card-img-top"  src="https://via.placeholder.com/600" alt="Card image cap">
-     <div class="card-body">
-        <h5 class="card-title">Entreprise Coffee machine 1</h5>
-        <p class="card-text">Price : 555    </p>
-     </div>
-       
-     
-     
-     </div>
-         <!-- Product -->
- </div>
-</div>
-   </div>
+
+ <!-- Kaffeparty -->
+        
+        
+        </div>
+           
+    </div>
+
+
    </section>
    <!-- Why Us -->
 
